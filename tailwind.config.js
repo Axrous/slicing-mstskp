@@ -1,3 +1,4 @@
+const plugin = require("tailwindcss/plugin");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,7 +6,22 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Source Sans Pro", "ui-sans-serif", "system-ui"],
+        mono: ["DM Sans", "ui-monospace"]
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    plugin(function({addUtilities}) {
+      const utilities = {
+        ".bg-hero": {
+          "background-image": "url(/hero.png)"
+        },
+      }
+
+      addUtilities(utilities);
+    })
+  ],
 }
