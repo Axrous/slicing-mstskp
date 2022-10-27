@@ -2,9 +2,9 @@ import FooterItem from "./FooterItem";
 
 export default function FooterSection() {
   return (
-    <section>
-      <div className="container mx-auto mt-96">
-        <div className="pt-28 flex">
+    <section className="xl:mt-60 lg:mt-28">
+      <div className="container mx-auto px-10 2xl:px-0">
+        <div className="pt-28 flex flex-wrap">
           <FooterItem
             title={"alternatives"}
             lists={["Buffer", "Sendible", "later", "Social Pilot"]}

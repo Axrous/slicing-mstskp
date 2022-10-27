@@ -12,8 +12,8 @@ export default function AlternativeItem({ img, content }) {
   const pickImage = image[img];
 
   return (
-    <div className=" w-6/12 flex justify-center">
-      <div className="w-9/12">
+    <div className=" lg:w-6/12 md:w-full flex justify-center md:mb-10 border-b-2">
+      <div className="lg:w-9/12 md:w-full">
         <Image src={pickImage} alt="alternative" />
         <p className="text-xl mt-4">{content}</p>
         <Button className={"mt-8"}>Learn More</Button>

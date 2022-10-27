@@ -7,7 +7,9 @@ export default function Card({ children, variant, className }) {
   const pickedVariant = varians[variant];
 
   return (
-    <div className={`w-6/12 px-4 py-14  ${pickedVariant} ${addClassName}`}>
+    <div
+      className={`w-full md:w-3/6 px-4 xl:py-14 lg:py-8 py-6 md:py-11 border-b-2 md:border-b-0 mb-2 md:mb-0 ${pickedVariant} ${addClassName}`}
+    >
       {children}
     </div>
   );

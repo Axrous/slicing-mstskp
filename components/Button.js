@@ -3,9 +3,10 @@ export default function Button({ className, children, variant }) {
 
   const varians = {
     white: `border text-black px-6 py-1.5 bg-white font-bold`,
-    "no-border": `text-white px-6 py-1.5 hover:border`,
+    "no-border": `lg:text-white px-6 py-1.5 hover:border`,
     yellow: ` text-white bg-[#FC881D]`,
     black: `text-white bg-[#0D0E25]`,
+    outline: "border border-[#FC881D] text-white",
   };
 
   const pickedVariant = varians[variant];

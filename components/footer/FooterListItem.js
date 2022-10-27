@@ -1,6 +1,6 @@
-export default function FooterListItem({ key, children }) {
+export default function FooterListItem({ children }) {
   return (
-    <li key={key} className="text-base leading-loose">
+    <li key={children} className="text-base leading-loose">
       {children}
     </li>
   );

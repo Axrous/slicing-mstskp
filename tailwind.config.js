@@ -18,15 +18,17 @@ module.exports = {
       const utilities = {
         ".bg-hero": {
           "background-image": "url(/hero.png)",
-          // "background-size": "100%",
-          // "background-position": "bottom",
+          "background-size": "cover",
+          "background-position": "bottom",
           "background-color": "#FFF6ED",
+          "background-repeat": "no-repeat",
         },
         ".bg-alternatives": {
           "background-image": "url(/bg2.png)",
-          // "background-size": "100%",
-          // "background-position": "bottom",
+          "background-size": "100%",
+          "background-position": "top",
           // "background-color": "#FFF6ED",
+          "background-repeat": "no-repeat",
         },
       };
 

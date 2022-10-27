@@ -1,20 +1,23 @@
 import AlternativeItem from "./Alternativeitem";
 export default function AlternativesSection() {
   return (
-    <section className="bg-gradient-to-b from-[#FFF6ED] to-white pt-10 relative">
+    <section
+      className="g-alternatives bg-gradient-to-b from-[#FFF6ED] to-white pt-10 relative"
+      id="alternatives"
+    >
       <div className="bg-alternatives">
-        <div className="container mx-auto h-[748px]">
-          <div className="flex pt-52">
-            <div className="w-6/12">
-              <span className="uppercase text-white tracking-widest font-semibold ml-14">
+        <div className="container mx-auto lg:h-[820px] md:h-[400px] 2xl:h-[989px] px-10 2xl:px-0">
+          <div className="flex flex-wrap xl:pt-52 lg:pt-32 md:pt-20 pt-16">
+            <div className="lg:w-6/12 md:w-full">
+              <span className="uppercase text-white tracking-widest font-semibold lg:ml-14 md:ml-0">
                 alternatives
               </span>
-              <h2 className="mx-auto text-4xl text-white font-bold w-5/6 leading-relaxed">
+              <h2 className="mx-auto text-xl md:text-4xl text-white font-bold lg:w-5/6 md:w-full leading-relaxed">
                 Karena Tool Kita Nggak Ada Apa-Apanya, Inilah Alternatifnya!
               </h2>
             </div>
-            <div className="w-6/12 m-auto">
-              <p className="text-white text-base w-5/6 leading-relaxed">
+            <div className="lg:w-6/12 w:full m-auto">
+              <p className="mt-16 lg:mt-0 mb-2 md:text-white text-base w-full md:w-5/6 leading-relaxed">
                 Seperti yang lo tau sendiri ya, tool ini tuh nggak ada
                 apa-apanya. Barangkali lo udah serius gitu butuh tool untuk
                 sosial media, maka dari itu kita kasih 2 alternatif yang bisa lo
@@ -25,9 +28,9 @@ export default function AlternativesSection() {
         </div>
       </div>
 
-      <div className="container mx-auto absolute left-2/4 -translate-x-2/4 -bottom-80">
+      <div className="container mx-auto lg:absolute md:static lg:left-2/4 lg:-translate-x-2/4 lg:-bottom-20 xl:-bottom-40  px-10 2xl:px-0 xl:w-5/6">
         <div className="bg-white rounded-3xl drop-shadow-2xl">
-          <div className="flex p-16 justify-around">
+          <div className="flex flex-wrap p-16 justify-around">
             <AlternativeItem
               img={"img1"}
               content={

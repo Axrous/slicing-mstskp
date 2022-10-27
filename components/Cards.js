@@ -4,7 +4,7 @@ import CardParagraf from "./CardParagraf";
 
 export default function Cards() {
   return (
-    <div className="w-6/12">
+    <div className="md:w-full lg:w-6/12 mt-5 lg:mt-0">
       <div className="flex flex-wrap">
         <Card variant="bg-black">
           <CardTitle addClassName="text-white">Database</CardTitle>
@@ -13,21 +13,21 @@ export default function Cards() {
             datanya banyak kan jadi gede juga size database-nya.
           </CardParagraf>
         </Card>
-        <Card className={"border-l-2"}>
+        <Card className={"md:border-l-2"}>
           <CardTitle>Server</CardTitle>
           <CardParagraf>
             Kalo ada insight, kamu akan bulak balik ngecek kan? Otomatis server
             harus idup terus, itu butuh listrik!
           </CardParagraf>
         </Card>
-        <Card className={"border-t-2"}>
+        <Card className={"md:border-t-2"}>
           <CardTitle>Listrik</CardTitle>
           <CardParagraf>
             Biaya listrik mahal, bos! Listrik kita ini masih batu bara, nggak
             bagus buat lingkungan. Kalo pake nuklir sih oke-oke aja.
           </CardParagraf>
         </Card>
-        <Card className="border-l-2 border-t-2">
+        <Card className="md:border-l-2 md:border-t-2">
           <CardTitle>Lingkungan</CardTitle>
           <CardParagraf>
             Pokoknya nggak bagus lah buat lingkungan, ini alesan kita kenapa gak
